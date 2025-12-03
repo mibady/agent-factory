@@ -1,0 +1,42 @@
+{
+  "name": "agent-patterns-starter",
+  "version": "1.0.0",
+  "description": "A factory for building AI agents - Pick your pattern, fill in the blanks, ship it.",
+  "scripts": {
+    "pattern2": "npx tsx 02-reusable/run.ts",
+    "pattern3": "npx tsx 03-sub-agents/orchestrator.ts",
+    "pattern4": "npx tsx 04-mcp-wrapper/server.ts",
+    "dev:pattern2": "npx tsx --watch 02-reusable/run.ts",
+    "dev:pattern3": "npx tsx --watch 03-sub-agents/orchestrator.ts",
+    "dev:pattern4": "npx tsx --watch 04-mcp-wrapper/server.ts"
+  },
+  "dependencies": {
+    "ai": "latest",
+    "@ai-sdk/openai": "latest",
+    "@ai-sdk/anthropic": "latest",
+    "@ai-sdk/google": "latest",
+    "@google/generative-ai": "latest",
+    "@modelcontextprotocol/sdk": "latest",
+    "zod": "latest",
+    "dotenv": "latest",
+    "ws": "latest"
+  },
+  "devDependencies": {
+    "tsx": "latest",
+    "typescript": "latest",
+    "@types/node": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "vercel-ai-sdk",
+    "mcp",
+    "patterns",
+    "starter"
+  ],
+  "author": "",
+  "license": "MIT"
+}
